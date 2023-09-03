@@ -1,0 +1,80 @@
+/* Menú lateral */
+
+.logo {
+    width: 100%;
+    background-color: #1B262C ;
+}
+
+
+/* Estilos para la lista de enlaces en pantallas grandes */
+/* .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+} */
+
+
+.menu li {
+    margin:  0px;
+    padding: 18px;
+    background-color: #022b4d;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff; /* Cambiar el color del texto a blanco */
+}
+
+/* Eliminar la línea divisoria del último elemento */
+.menu li:last-child {
+    border-right: none;
+}
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none; /* Ocultar la lista en pantallas pequeñas */
+    }
+
+    .hamburger-menu {
+        /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+        display: block;
+        
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .menu ul {
+        flex-direction: row; /* Vuelve a la disposición horizontal en pantallas medianas */
+        justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+    }
+
+    .menu li {
+        margin: 5px; /* Reduce el margen entre elementos */
+    }
+}
+
+/* Media queries para pantallas aún más pequeñas, si es necesario */
+@media (max-width: 480px) {
+    /* Estilos específicos para pantallas muy pequeñas */
+    .menu ul {
+        flex-direction: column; /* Vuelve a la disposición vertical en pantallas muy pequeñas */
+    }
+
+    .menu li {
+        margin: 5px; /* Reduce el margen entre elementos */
+    }
+}

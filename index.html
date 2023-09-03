@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TechBank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="area-principal.css">
+  <link rel="stylesheet" href="footer.css"/>
+  <link rel="stylesheet" href="nav-bar.css">
+  <script src="https://kit.fontawesome.com/d70a1f92ee.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="cuerpo">
+
+  <header id="header" class="top">
+    <div class="d-flex align-items-center">
+
+      <a href="index.html" class="logo me-auto"><img src="techbank.png" height="" width="170px" alt=""
+          class="img-fluid"></a>
+
+    </div>
+
+    <nav class="menu">
+      <div class="nav-bar" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      
+      <nav id="nav" class="nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Cuentas</a></li>
+        <li><a href="#">Transferencias</a></li>
+        <li><a href="#">Pagos</a></li>
+        <li><a href="conversor.html">Conversor de divisas *</a></li>
+        <li><a href="#">Préstamos</a></li>
+        <li><a href="#">Inversiones</a></li>
+        <li><a href="#">Seguros</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Atención al Cliente</a></li>
+        <li><a href="#">Sucursales</a></li>
+        <li><a href="#">Educación Financiera</a></li>
+        <li><a href="calculadora.html">Calculadora *</a></li>
+        <li><a href="#">Noticias Financieras</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+        <li><a href="formulario.html">Iniciar Sesion *</a></li>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- Cinta -->
+  <div class="summasolutions-custom-top-header-0-x-container_top_header_items" style="left: 0%;">
+    <p class="summasolutions-custom-top-header-0-x-top_header_text" style="color: rgb(255, 255, 255);">
+    <p class="Texto-mover" style=" text-decoration:none;color: white;">
+      28/03/2023 >> <label for=""> DOLAR </label> | Compra: $ 347,50 - Venta: $365,50 - <label for="">Euro</label> |
+      Compra: $ 379,00 - Venta: $397,00
+    </p>
+    </p>
+  </div>
+  <!-- end cinta -->
+
+  <!-- Carousel -->
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/carrousel1.png" alt="" width="100%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/carrousel2.png" alt="" width="100%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/carrousel3.png" alt="" width="100%">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Anterior</font>
+        </font>
+      </span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Próximo</font>
+        </font>
+      </span>
+    </button>
+  </div>
+
+  <!-- EndCarousel -->
+  <!-- Botonera -->
+  <div class="contenedor">
+    <div class="botonera2">
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/promociones.png" alt="">
+        <br>Promociones</button>
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/cuentas.png" alt="">
+        <br>Cuentas</button>
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/tarjetas.png" alt="">
+        <br>Tarjetas</button>
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/prestamos.png" alt="">
+        <br>Prestamos</button>
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/inversion.png" alt="">
+        <br>Inversiones</button>
+      <button type="button" class="btn-botonera"><img class="icono" src="Imagenes/seguros.png" alt="">
+        <br>Seguros</button>
+    </div>
+  </div>
+  <!-- End Botonera -->
+
+  <p class="titulodia">Tu día a día en TechBank</p>
+  <!-- tarjetas -->
+  <div class="grid-card">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="Imagenes/tarjeta2.PNG" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Hagamos tus claves, usuario y token</h3>
+        <p class="card-text">Te ayudamos a crearlos o recuerarlos.</p>
+        <a href="#" class="btn btn-primary">Conocer más</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="Imagenes/tarjeta1.PNG" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Queremos cuidarte de las estafas</h3>
+        <p class="card-text">Te contamos todo lo que tenés que saber.</p>
+        <a href="#" class="btn btn-primary">Conocer más</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="Imagenes/tarjeta3.PNG" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Videos para hacer todo online</h3>
+        <p class="card-text">Te mostramos cómo usar la App Galicia y Online Banking.</p>
+        <a href="#" class="btn btn-primary">Conocer más</a>
+      </div>
+    </div>
+  </div>
+  <!-- End tarjetas -->
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- ofrecemos -->
+  <p class="titulodia">Conocé lo que tenemos para ofrecer</p>
+  <h5 class="titulo2">Todos los beneficios están enfocado para que puedas aprovechar al maximo ser cliente de TECHBANK
+  </h5>
+
+  <div class="grid-conoce">
+    <div>
+      <div class="card" style="width: 38rem;">
+        <img class="card-img-top" src="Imagenes/prestamo1.PNG" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title peditarjeta">Pedí tu Tarjeta de Crédito TechBank</h3>
+          <p class="card-text">Sacá tu tarjeta y empezá a viajar. Todas tus compras suman Puntos TechBank. ¡No te quedes
+            afuere!</p>
+          <a href="#" class="btn btn-primary">Conocé más</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card border-primary mb-3" style="max-width: 30rem;">
+        <div class="card-header emprendedor-sueldo"> <img src="Imagenes/emprendedor.png" alt="" width="50px;"> ¿Sos
+          emprendedor?</div>
+        <div class="card-body text-primary">
+          <p class="card-text">Conocé todos los beneficios que tenemos para vos si comenzás a acreditar tus ventas con
+            nosotros.</p>
+
+          <a href="#" class="btn btn-primary">Conocer más</a>
+        </div>
+      </div>
+      <div class="card border-secondary mb-3" style="max-width: 30rem;">
+        <div class="card-header emprendedor-sueldo"> <img src="Imagenes/sueldo.png" alt="" width="50px;"> Trae tu Sueldo
+        </div>
+        <div class="card-body text-secondary">
+          <p class="card-text">¡LLevate tu cuenta 100% bonificada y hasta $100.000 de regalo! Traé tu sueldo y empezá
+            a disfrutar de los beneficios de TechBank.</p>
+
+          <a href="#" class="btn btn-primary">Conocer más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end ofrecemos -->
+  <br>
+  <!-- ayuda -->
+  <div class="ayuda turno-nuevo">
+    <p></p>
+    <p class="solicita-turno">Solicita tu turno</p>
+    <p class="turno-sucursal">Podés solicitar tu turno para ser atendido en sucursales ingresando a Banca Online</p>
+
+    <button class="button2">Saca tu turno</button>
+    <button class="button2">No tengo acceso</button>
+    <p></p>
+
+  </div>
+  <!-- End ayuda -->
+  <br>
+  <hr>
+  <br>
+  <!-- info -->
+  <p class="titulodia">Información para consumidoras y consumidores</p>
+  <div class="info-consumidores">
+    <div></div>
+    <div id="_personas_jcr_content_root_responsivegrid_container_copy_copy__text_copy" data-rte-editelement="true"
+      class="rteEditor ">
+      <p style="margin-left:40.0px"><a href="/content/galicia/ar/es/home/personas/cuenta-gratuita-universal.html">Cuenta
+          Gratuita Universal</a></p>
+      <p style="margin-left:40.0px"><a href="">Cuenta Ceconar</a></p>
+      <p style="margin-left:40.0px"><a href="">Cuenta para la Repatriación de Fondos</a></p>
+      <p style="margin-left:40.0px"><a href="">Cuenta Ceproar</a></p>
+    </div>
+    <div>
+      <class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--default--0 aem-GridColumn--default--none
+        aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+        <div id="_personas_jcr_content_root_responsivegrid_container_copy_copy__text" data-rte-editelement="true"
+          class="rteEditor ">
+          <p style="margin-left:40.0px"><a
+              href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Hacer reclamo en Defensa
+              del
+              Consumidor</a></p>
+          <p style="margin-left:40.0px"><a href="">Contratos de Adhesión - Ley 24.240 de Def. del Consumidor</a></p>
+          <p style="margin-left:40.0px"><a href="">Botón de arrepentimiento</a></p>
+          <p style="margin-left:40.0px"><a href="">Información al Usuario Financiero</a></p>
+        </div>
+    </div>
+    <div>
+    </div>
+  </div>
+  <!-- end info -->
+  <!-- ayuda -->
+  <div class="ayuda">
+    <p></p>
+    <img src="Imagenes/ayuda.png" alt="" width="70px;">
+    <p style="font-size: 30px;">¿Necesitas Ayuda?</p>
+    <p style="font-size: 15px;">Respondemos tus dudas</p>
+
+    <button class="button2">Ir a ayuda</button>
+    <p></p>
+
+  </div>
+  <!-- End ayuda -->
+
+  <!-- Cinta -->
+  <div class="summasolutions-custom-top-header-0-x-container_top_header_items" style="left: 0%;">
+    <p class="descarga">
+      Descargá Banca Móvil TechBank >> <img src="Imagenes/descarga1.png" alt="" width="150px;"> <img
+        src="Imagenes/descarga2.png" alt="" width="150px;">
+    </p>
+  </div>
+  <!-- end cinta -->
+
+  <!--Footer-->
+  <footer>
+    <div class="pre-footer">
+      <div class="columna">
+        <p>Conócenos</p>
+        <li><a href="">Información Financiera</a></li>
+        <li><a href="">Disciplina de Mercado</a></li>
+        <li><a href="">Resumen de Información Financiera</a></li>
+        <li><a href="">Programa de Integridad</a></li>
+        <li><a href="">Información Corporativa</a></li>
+        <li><a href="">TechBank Sustentable</a></li>
+      </div>
+      <div class="columna columna2">
+        <p>Información Importante</p>
+        <li><a href="">Ayuda Urgente</a></li>
+        <li><a href="">Defensa al Consumidor</a></li>
+        <li>
+          <a href="">Cajeros con Funcionalidad para Personas con Discapacidad</a>
+        </li>
+        <li><a href="">Personas Expuestas Politicamente</a></li>
+        <li><a href="">Reporte Responsable de Vulnerabilidades</a></li>
+        <li><a href="">Política Ambiental</a></li>
+      </div>
+      <div class="columna">
+        <p>Productos</p>
+        <li><a href="">Tarjetas de Débito y Crédito</a></li>
+        <li><a href="">Préstamos Personales</a></li>
+        <li><a href="">Plazo Fijo</a></li>
+        <li><a href="">Inversiones</a></li>
+        <li><a href="">Cobrá tu Sueldo en TechBank</a></li>
+        <li><a href="">Promociones</a></li>
+      </div>
+
+    </div>
+    <hr>
+
+    <div class="redes">
+      <a href="#"><i class="fa-solid fa-phone"></i> </a>
+      <a href="#"><i class="fa-regular fa-envelope"></i> </a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i> </a>
+      <a href="https://twitter.com/login?lang=es"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://es-la.facebook.com/login"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="quick-links">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/cuentas">Cuentas</a></li>
+        <li><a href="/transferencias">Transferencias</a></li>
+
+      </ul>
+    </div>
+
+    <div class="legal">
+      <p>
+        <a href="/politica-de-privacidad">Política de Privacidad</a> |
+        <a href="/terminos-y-condiciones">Términos y Condiciones</a> |
+        <a href="">Aviso Legal</a> |
+        <a href="">Recomendaciones de Seguridad</a>
+      </p>
+      <p>Derechos de autor © 2023 TechBank</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

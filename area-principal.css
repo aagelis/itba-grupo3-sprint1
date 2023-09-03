@@ -1,0 +1,186 @@
+
+.cuerpo{
+    background-color: #0f4c75;
+}
+.botonera{
+    margin: 50px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+/* Estilos para la botonera */
+.botonera2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; /* Espacio entre los botones */
+
+}
+
+.btn-botonera {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    color: #3282BB;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px;
+    text-align: center;
+}
+
+.icono {
+    max-width: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+}
+.Texto-mover{
+    animation: mover-izquierda-derecha 45s infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes mover-izquierda-derecha{
+    from{
+        transform: translateX(-90%);
+    }
+    to{
+        transform: translateX(90%);
+    }
+}
+
+.Texto-mover{
+    font-size: 18px;
+}
+label{
+    font-size: 22px;
+    color:#BBE1FA;
+    font-weight: bold;
+}
+.icono{
+    width: 30px;
+}
+.grid-card{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    justify-items: center;
+}
+.titulodia{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.ayuda{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.89);
+    max-width: 95%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: arial;
+    margin-left: 30px;
+    height: 260px;
+    background-color: #3282BB;
+    padding: 10px;
+ }
+
+ .button2 {
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px black;
+  }
+  
+  .button2:hover {background-color: #0f4c75}
+  
+  .button2:active {
+    background-color: #f07a1a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .descarga{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #3282BB;
+    margin: 10px;
+  }
+  .titulo2{
+    text-align: center;
+  }
+.grid-conoce{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    text-align: center;
+    justify-items: center;
+}
+.emprendedor-sueldo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.peditarjeta{
+    font-weight: bold;
+}
+.info-consumidores{
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    width: 95%;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #3282BB ;
+}
+.solicita-turno{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.turno-sucursal{
+    font-size: 20px;
+    color: #0f4c75;
+    font-weight: bold;
+}
+
+.img {
+    max-width: 100%; 
+    height: auto;
+}
+/* Media queries para hacer responsive */
+@media screen and (min-width: 768px) {
+    .botonera2 {
+        gap: 50px; 
+    }
+    .grid-card {
+        grid-template-columns: repeat(3, 33%); 
+    }
+    .menu ul {
+        display: none; 
+    }
+
+    .menu.active ul {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .menu.active li {
+        text-align: center;
+        margin: 5px; 
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (min-width: 1024px) {   
+    .grid-conoce {
+        grid-template-columns: 55% 45%;
+    }
+    
+
+}

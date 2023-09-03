@@ -1,0 +1,150 @@
+footer {
+  background-color: #1B262C;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pre-footer {
+  background-color: #1B262C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.espacio-prueba {
+  height: 900px;
+  background-color: bisque;
+}
+
+hr{
+    width: 80%;
+}
+
+/*COLORES:
+AZUL OSCURO: #1B262C
+AZUL CLARO: #0F4C75
+CELESTE: #3282B8
+CELESTE CLARO: #BBE1FA
+
+*/
+
+/******************************/
+
+.columna {
+  list-style: none;
+  width: 350px;
+}
+.columna p {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.columna li {
+  margin: 15px;
+  font-size: 15px;
+}
+
+.columna a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.columna a:hover {
+  background-color: #0F4C75;
+  padding: 3px;
+}
+
+.columna2 {
+  margin-top: 20px;
+}  
+
+/******************************/
+
+.legal {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 80px;
+}
+.legal p{
+    display: block;
+   
+}
+
+.legal a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.legal a:hover {
+    text-decoration: none;
+    color: #0F4C75;
+ }
+
+ /******************************/
+
+ .quick-links {
+  margin: 60px 0 0 50px;
+}
+
+.quick-links ul {
+  list-style: none;
+  display: flex;
+  height: 50%;
+  justify-content: end;
+}
+
+.quick-links li {
+  margin-right: 20px;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  color: #0F4C75;
+  text-decoration: none;
+}
+
+/******************************/
+
+.redes {
+  margin: 50px 0 0 50px;
+  display: inline-block;
+  float: left;
+}
+
+.redes a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #3282B8;
+  border: 1px solid #BBE1FA;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.redes a:hover {
+  color: #fff;
+  background-color: #8cc7ee;
+  box-shadow: 0 0 20px #fff;
+}
