@@ -23,7 +23,7 @@ p {
 
 form {
 
-    background: linear-gradient(to bottom right, blue, pink);
+    background: linear-gradient(to bottom right, #1B262C, #0F4C75);
     border-radius: 20px;
     height: 600px;
     width: 500px;
